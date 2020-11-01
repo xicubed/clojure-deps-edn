@@ -286,6 +286,12 @@
   {:extra-deps
    {openjdk/java-sources {:local/root "/usr/lib/jvm/openjdk-11/lib/src.zip"}}}
 
+  ;; macOS after brew upgrade openjdk installed openjdk 15
+  :lib/java15-source
+  {:extra-deps
+   {openjdk/java-sources {:local/root "/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/lib/src.zip"}}}
+
+
   ;; End of: Java Sources
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -806,7 +812,7 @@
                 {:git/url "https://github.com/dundalek/closh.git"
                  :tag     "v0.5.0"
                  :sha     "dec68b43a66ff8547e4742fa433c4d486f550e60"}}
-   :main-opts  ["-m" "closh.zero.frontend.rebel"]}
+   :main-opts  ["-m" "closh.zero.frontend.rebel"]}}
 
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -831,7 +837,7 @@
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-  } ;; End of alias definitions
+   ;; End of alias definitions
 
 
  ;; Library Repositories
@@ -860,5 +866,5 @@
 
              ;; Example of local Artifactory repository configuration
              ;; {"business-area" {:url "https://artifacts.internal-server.com:443/artifactory/business-area-maven-local"}
-             "cognitect-dev-tools" {:url "https://dev-tools.cognitect.com/maven/releases/"}
-             }}
+             "cognitect-dev-tools" {:url "https://dev-tools.cognitect.com/maven/releases/"}}}
+
