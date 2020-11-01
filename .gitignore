@@ -600,3 +600,10 @@ data
 
 # project itself
 .clojure.iml
+
+# cognitect dev tools - private
+/dev-local-0.9.225/
+/rebl-0.9.242/
+/COPYRIGHT.txt
+/install
+/README.cognitect.dev.tools.md
